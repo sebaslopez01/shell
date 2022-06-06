@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f | sort | head
+find . -type f | sort | head | cut -c 3-
