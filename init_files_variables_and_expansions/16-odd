@@ -1,2 +1,2 @@
 #!/bin/bash
-grep '^(..)+$'
+perl -ne 'print if($.%2)'
