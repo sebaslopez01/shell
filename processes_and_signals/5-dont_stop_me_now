@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 # Don't stop me now!
 
-kill -9 pgrep 4-to_infinity_and_beyond
+p=$(pidof 4-to_infinity_and_beyond)
+
+kill -9 "$p"
