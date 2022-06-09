@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # Don't stop me now!
 
-kill "$( pidof 4-to_infinity_and_beyond )"
+kill "$( pidof -x 4-to_infinity_and_beyond )"
