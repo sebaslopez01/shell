@@ -8,11 +8,11 @@ start() {
 
 stop() {
 	pkill -9 -f ./manage_my_process
+	unlink /var/run/my_process.pid
 }	
 
 restart() {
 	stop
-	rm -f /var/run/my_process.pid
 	start
 	echo "manage_my_process restarted"
 }	
@@ -24,7 +24,6 @@ case "$1" in
 		;;
 	stop)
 		stop
-		rm -f /var/run/my_process.pid
 		echo "manage_my_process stopped"
 		;;
 	restart)
