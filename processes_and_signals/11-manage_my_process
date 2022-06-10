@@ -7,8 +7,8 @@ start() {
 }
 
 stop() {
-	pkill -9 -f ./manage_my_process
 	rm -f /var/run/my_process.pid
+	pkill -9 -f ./manage_my_process
 }	
 
 restart() {
